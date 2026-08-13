@@ -1,0 +1,7 @@
+__pycache_/
+*.pyc
+*.FROZEN
+.venv/
+venv/
+node_modules/
+_inbox/
