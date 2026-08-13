@@ -1,0 +1,39 @@
+{
+  "skill_id": "<slug>-<skill-slug>",
+  "skill_name": "<技能名称>",
+  "description": "<触发条件+产出>",
+  "tests": [
+    {
+      "type": "positive",
+      "prompt": "<明确匹配本 skill 触发条件的真实问法>",
+      "expect": "call"
+    },
+    {
+      "type": "positive",
+      "prompt": "<另一种典型触发问法>",
+      "expect": "call"
+    },
+    {
+      "type": "decoy",
+      "prompt": "<表面相似但属于同包另一个 skill 的场景，跨 skill 混淆测试>",
+      "expect": "not_call",
+      "should_call_instead": "<slug>-<other-skill-slug>"
+    },
+    {
+      "type": "decoy",
+      "prompt": "<完全不属于本包的无关场景>",
+      "expect": "not_call"
+    },
+    {
+      "type": "decoy",
+      "prompt": "帮我把这本书蒸馏成技能",
+      "expect": "not_call",
+      "should_call_instead": "cangjie-distiller"
+    },
+    {
+      "type": "borderline",
+      "prompt": "<接近但不完全满足触发条件>",
+      "expect": "boundary"
+    }
+  ]
+}
