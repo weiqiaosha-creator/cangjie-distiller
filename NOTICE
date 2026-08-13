@@ -1,0 +1,56 @@
+cangjie-distiller
+Copyright (C) 2026 桥山知识库 (Qiaoshan Knowledge Base)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+----------------------------------------------------------------------
+
+DERIVATIVE NOTICE
+
+This work is a derivative of:
+
+  kangarooking/cangjie-skill
+  Author:  袋鼠帝 (kangarooking / kangarookingluohm)
+  License: GNU Affero General Public License v3.0 (AGPL-3.0)
+  Source:  https://github.com/kangarooking/cangjie-skill
+
+cangjie-distiller is distributed under the same AGPL-3.0 license. The
+RIA-TV++ distillation methodology originates from that project. The
+Windows adaptation, the self-contained book/video/audio ingestion layer,
+the security gate, the self-growth engine, and the robustness guardrails
+are original implementations of 桥山知识库 and are not derived from the
+upstream runtime.
+
+----------------------------------------------------------------------
+
+THIRD-PARTY COMPONENT ATTRIBUTION (permanent)
+
+The following six guardrails are incorporated from an external work and
+retain mandatory attribution:
+
+  yizhan-shendeng v2 (一盏神灯 v2 / 大李的AI知识库)
+  Author: 大李
+
+  Guardrails:
+    - 逐块回执覆盖率 (block-level receipt coverage)
+    - 主料配料验证分离 (material/seasoning verification separation)
+    - 公开理论阈值过滤 (public-theory threshold filter)
+    - 通过率自校准 (pass-rate self-calibration)
+    - 全军覆没降级 (all-fail degradation)
+    - 自触发必考题 (self-trigger must-test)
+
+  Authorization: Used under explicit WeChat permission granted on
+  2026-08-10 (reply "可以" = consent for redistribution and merge
+  publication). This attribution MUST be retained in any redistribution,
+  including publications of cangjie-distiller.
